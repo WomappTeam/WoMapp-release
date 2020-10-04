@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">WoMapp</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="AlreadyAnAccount"><u>Non hai ancora un account WoMapp? Creane uno cliccando qui!</u></string>
+    <string name="SlogaApp">" L'APP VALUTATA DALLE DONNE\n PER LE DONNE"</string>
+    <string name="title_activity_maps">WoMapp</string>
+    <string name="LogInText">"ACCEDI AL TUO ACCOUNT WOMAPP"</string>
+    <string name="SignInText">"CREA IL TUO ACCOUNT WOMAPP"</string>"
+    <string name="VerificationEmail"><b>Il tuo indirizzo Email non è stato verificato, controlla la tua casella postale! <u>Se non trovi la email clicca qui!</u></b></string>
+    <string name="EmailPasswordException"><b>"La password o l'email inserite non sono corrette!"</b></string>
+    <string name="SignInException"><b>Errore durante la registrazione, prefavore riprovare</b></string>
+    <string name="VerificationExeption"><b>Errore durante la verifica email, verificare che la mail inserita sia esistente!</b></string>
+    <string name="logOutMenu">Esci da WoMapp</string>
+    <string name="help">Help</string>
+    <string name="contatti">Contatti</string>
+    <string name="DataBaseUser">"UTENTI"</string>
+    <string name="MotivoException"><b>Selezionare un motivo della segnalazione</b></string>
+    <string name="ModalitaException"><b>Selezionare un modalità della segnalazione</b></string>
+    <string name="Data">Data: </string>
+    <string name="ForgotPassword"><b>Hai dimenticato la password ?</b></string>
+    <string name="DatabaseUserSegnalation">User Segnalation</string>
+
+    <string name="Privacy">
+        DICHIARO\ndi aver letto e compreso L’INFORMATIVA DELL’APP WoMapp PER IL TRATTAMENTO DEI DATI PERSONALI AI SENSI DELL’ART. 13 e ss DEL REGOLAMENTO (UE) 2016/679 e di prestare il consenso, a tal  proposito, affinché WoMapp acceda e tratti i dati personali inseriti in fase di registrazione e durante il futuro utilizzo dell’app (indirizzo posta elettronica, età, sesso, immagine, coordinate geografiche e temporali), al fine di poter ricevere i servizi offerti dall’app ossia: accedere all’account generato, utilizzarlo, pubblicare le segnalazioni nonché essere geolocalizzato quando verranno inserite le coordinate geografiche e temporali per fare una segnalazione.
+    </string>
+</resources>

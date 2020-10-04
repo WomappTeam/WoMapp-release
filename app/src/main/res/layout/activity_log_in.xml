@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log_in_background"
+    tools:context=".LogInActivity">
+
+    <TextView
+        android:id="@+id/logInTexView"
+        android:layout_width="411dp"
+        android:layout_height="519dp"
+        android:background="@drawable/log_in_textview_bg"
+        android:paddingTop="30dp"
+        android:text="@string/LogInText"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/emailID"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/logInTexView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logInTexView"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <EditText
+        android:id="@+id/passwordID"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProgressBarDue" />
+
+    <Button
+        android:id="@+id/LogInButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_bg"
+        android:stateListAnimator="@android:anim/fade_out"
+        android:text="ACCEDI"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/logInTexView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordID"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBarDue"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="224dp"
+        app:layout_constraintBottom_toTopOf="@+id/logInTexView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/goToSignIn"
+        android:layout_width="244dp"
+        android:layout_height="44dp"
+        android:text="@string/AlreadyAnAccount"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/logInTexView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogInButton"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="78dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/ProgressBarDue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/WomAppTextview"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@mipmap/logo_womapp" />
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="78dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/ProgressBarDue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/WomAppTextview"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@mipmap/logo_womapp" />
+
+    <TextView
+        android:id="@+id/WomAppTextview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="WOMAPP"
+        android:textAlignment="center"
+        android:textColor="#03A9F4"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/ProgressBarDue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="356dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/SlogaApp"
+        android:textAlignment="center"
+        android:textColor="#39362F"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ProgressBarDue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ForgotPassword"
+        android:textColor="#F44336"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/ExceptionMessageS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goToSignIn" />
+
+    <TextView
+        android:id="@+id/ExceptionMessageS"
+        android:layout_width="387dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

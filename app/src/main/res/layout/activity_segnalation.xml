@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contacts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:clipChildren="true">
+
+    <TextView
+        android:id="@+id/Segnalazioni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Segnalazioni"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <ImageView
+        android:id="@+id/logoWoMapp2"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/motivoSegnalazioneGroup"
+        app:layout_constraintEnd_toStartOf="@+id/Segnalazioni"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo_womapp" />
+
+    <ImageView
+        android:id="@+id/logoWoMapp3"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/motivoSegnalazioneGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Segnalazioni"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo_womapp" />
+
+    <Button
+        android:id="@+id/InviaSegnalazioneButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="224dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_bg"
+        android:text="Invia segnalazione"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/ExceptionR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modalitaSegnalazioneGroup"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <RadioGroup
+        android:id="@+id/motivoSegnalazioneGroup"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/segnalation_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Segnalazioni">
+
+        <TextView
+            android:id="@+id/Motivazione"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selezionare motivazione"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#040404"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/motivazione1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="10dp"
+            android:text="ZONA RUMOROSA"
+            android:textAllCaps="true"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/motivazione2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="10dp"
+            android:text="ZONA BUIA"
+            android:textAllCaps="true"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/motivazione3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="ZONA ISOLATA"
+            android:textAllCaps="true"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/motivazione4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="ZONA POCO SERVITA DAI MEZZI"
+            android:textAllCaps="true"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/motivazione5"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="ZONA MAL FREQUENTATA"
+            android:textAllCaps="true"
+            android:textColor="#050505" />
+
+        <RadioButton
+            android:id="@+id/motivazione6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="POSSIBILI MOLESTIE DI STRADA"
+            android:textAllCaps="true"
+            android:textColor="#050505" />
+
+        <RadioButton
+            android:id="@+id/motivazione7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="POSSIBILE STALKING"
+            android:textAllCaps="true"
+            android:textColor="#050505" />
+
+        <RadioButton
+            android:id="@+id/motivazione8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="POSSIBILI MOLESTIE SESSUALI"
+            android:textAllCaps="true"
+            android:textColor="#050505" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/modalitaSegnalazioneGroup"
+        android:layout_width="382dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/segnalation_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motivoSegnalazioneGroup"
+        app:layout_constraintVertical_bias="0.163">
+
+        <TextView
+            android:id="@+id/Modalità"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modalità di segnalazione"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/Segnalazione_Anonima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Segnalazione anonima"
+            android:textAllCaps="true"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/Segnalazione_Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Segnalazione con username"
+            android:textAllCaps="true"
+            android:textColor="#040404" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/infoButton"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/InviaSegnalazioneButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875"
+        app:srcCompat="@drawable/ic_info" />
+
+    <TextView
+        android:id="@+id/ExceptionR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:text="Exception"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
+    <CheckBox
+        android:id="@+id/DonotShow"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:checked="false"
+        android:text="Non mostrare più l'avviso"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ExceptionR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InviaSegnalazioneButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

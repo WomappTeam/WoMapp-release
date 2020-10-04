@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1080162107422",
+    "firebase_url": "https://womapp-25b01.firebaseio.com",
+    "project_id": "womapp-25b01",
+    "storage_bucket": "womapp-25b01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080162107422:android:faa7404ba810f76e922e0f",
+        "android_client_info": {
+          "package_name": "com.example.womapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080162107422-h261him53pufb9vp1k37ottimuedq13v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.womapp",
+            "certificate_hash": "cd893c85c342c976663f901623c345f69d6dfa9b"
+          }
+        },
+        {
+          "client_id": "1080162107422-4fru9utlbubq4o76v4v4hbq2o9r0dvk8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.womapp",
+            "certificate_hash": "18e0de09fe48101ed2321ccfc3dde925acbbb17f"
+          }
+        },
+        {
+          "client_id": "1080162107422-pbrb3s35ec8nuhjtp6e2hdhcedd7sgis.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqi_V_64F0ZEWE4KZybWWQgldu1kEMjXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080162107422-pbrb3s35ec8nuhjtp6e2hdhcedd7sgis.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
